@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Taller3usuariosPostComments</string>
+    <string name="str_tb_p1">usuarios</string>
+    <string name="str_tb_p2">Post</string>
+    <string name="str_tb_p3">Comments</string>
+
+</resources>
