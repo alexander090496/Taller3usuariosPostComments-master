@@ -47,6 +47,8 @@ public class AdapterUser extends RecyclerView.Adapter<AdapterUser.ViewHolder> {
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         // Encargado de trabajar con el item.xml y sus componentes
+
+
         holder.textViewuserid.setText(Integer.toString(usermodelList.get(position).getId()));
         holder.textViewuname.setText(usermodelList.get(position).getName());
         holder.textViewusername.setText(usermodelList.get(position).getUsername());
@@ -80,7 +82,8 @@ public class AdapterUser extends RecyclerView.Adapter<AdapterUser.ViewHolder> {
         public void onClick(View view) {
             Context contextItem = view.getContext();
             Intent intent = new Intent(context, MainActivity2.class);
-            intent.putExtra("id", usermodelList.get(getLayoutPosition()).getId());
+            intent.putExtra("idUser", usermodelList.get(getLayoutPosition()).getId());
+
             contextItem.startActivity(intent);
             //String valor = Integer.toString(albumModelList.get(getLayoutPosition()).getId());
             //Toast.makeText(contextItem, valor, Toast.LENGTH_SHORT).show();

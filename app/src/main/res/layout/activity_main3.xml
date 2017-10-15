@@ -5,14 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.aula7.taller3usuariospostcomments.MainActivity">
+    tools:context="com.example.aula7.taller3usuariospostcomments.MainActivity3">
     <include layout="@layout/toolbar1"/>
 
     <android.support.v7.widget.Toolbar
-    android:id="@+id/id_tb_toolbar"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:titleTextColor="@android:color/white">
+        android:id="@+id/id_tb_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white">
     </android.support.v7.widget.Toolbar>
 
     <LinearLayout
@@ -21,17 +21,16 @@
         android:orientation="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
         <ProgressBar
-            android:id="@+id/id_pb_item_users"
+            android:id="@+id/id_pb_item_comments"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:visibility="gone" />
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/id_rv_item1"
+            android:id="@+id/id_rv_item_commenst"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </android.support.v7.widget.RecyclerView>
     </LinearLayout>
-
 
 </android.support.design.widget.CoordinatorLayout>

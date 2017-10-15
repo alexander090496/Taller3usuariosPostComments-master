@@ -31,8 +31,6 @@ public class Jsonuser {
             usermodel.setUsername(item.getString("username"));
             usermodel.setAddress(item2.getString("city"));
             usermodel.setCompany(item3.getString("name"));
-
-
             usermodelList.add(usermodel);
         }
         return usermodelList;
